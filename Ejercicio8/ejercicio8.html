@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+</head>
+<body>
+    <h1>Ejercicio 8</h1>
+
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cultura General</legend><br>
+            <label>Capital de Noruega:</label>
+            <label><input type="radio" name="ciudad" value="Copenhague"> Copenhague</label>
+            <label><input type="radio" name="ciudad" value="Helsinki"> Helsinki</label>
+            <label><input type="radio" name="ciudad" value="Oslo"> Oslo</label>
+            <br><br>
+            <label>Fecha de la revoulución Francesa:</label>
+            <label><input type="radio" name="fecha" value="1492"> 1492</label>
+            <label><input type="radio" name="fecha" value="1789"> 1789</label>
+            <label><input type="radio" name="fecha" value="1917"> 1917</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+    <h2>HTML number inputs</h2>
+
+    <form>
+        <label for="edad1">Introduce tu edad:</label>
+        <input type="number" id="edad1" name="edad1" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form>
+        <label for="edad2">Introduce tu edad (18-99) campo obligatorio:</label>
+        <input type="number" id="edad2" name="edad2" required min="18" max="99" 
+               oninvalid="setCustomValidity('Por favor, rellene este campo')" 
+               oninput="setCustomValidity('')">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form>
+        <label for="edad3">Introduce tu edad (18-99) campo obligatorio:</label>
+        <input type="number" id="edad3" name="edad3" required min="18" 
+               oninvalid="setCustomValidity('El valor debe ser superior o igual a 18')" 
+               oninput="setCustomValidity('')">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br><br><br>
+    <h1>Eventos para Cambiar Color</h1>
+
+    <p onclick="this.style.color='red'">Este párrafo...</p>
+    <p ondblclick="this.style.color='red'">Este párrafo...</p>
+    <p onmouseup="this.style.color='red'">Este párrafo...</p>
+    <p onmousedown="this.style.color='red'">Este párrafo...</p>
+    <p onmousemove="this.style.color='red'">Este párrafo...</p>
+    <p onmouseover="this.style.color='red'">Este párrafo...</p>
+    <p onmouseout="this.style.color='red'">Este párrafo...</p>
+
+</body>
+</html>
