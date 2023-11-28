@@ -1,0 +1,57 @@
+/*Estilo para el cuerpo (body)*/
+body {
+    background-color: #d5dbdb;
+}
+
+/* Estilos para la clase class-parr-2 */
+.class-parr-2 {
+    color: blue;
+}
+
+/* Estilos para la clase class-parr-3 */
+.class-parr-3 {
+    color: green;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: salmon;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el div con clase div-4 */
+.div-4 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Estilos para la clase artic dentro de article */
+.artic {
+    color: red;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de la tabla con clase clase-tabla-product y price */
+.clase-tabla-product,
+.price {
+    text-align: center;
+    padding: 8px;
+}
+
+/* Estilos para el pie de tabla */
+tfoot {
+    font-weight: bold;
+    text-align: center;
+}
+
