@@ -1,0 +1,67 @@
+body {
+  background: red;
+}
+header {
+  background-color: navy;
+  height: 70px;  
+}
+main {
+  height: 150px;
+  width: 90%;
+  margin: 0 auto;
+  background: orange;
+}
+footer {
+  height: 80px;
+  background: lightblue;
+}
+
+@media only screen and (max-width: 800px){
+  body {
+    background: lime;
+  }
+  header::before {
+    content: 'Ancho maximo de 800px';
+    font-size: 50px;
+    color: #fff;
+  }
+  footer {
+    background: #17A589;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body {
+    background: yellow;
+  }
+  header::before {
+    content: 'Ancho maximo de 600px';
+    font-size: 50px;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  body {
+    background: purple;
+  }
+  header::before {
+    content: 'Ancho minimo de 1000px';
+    font-size: 50px;
+    color: #fff;
+  }
+  footer {
+    background: #FF5733;
+  }
+}
+
+/* @media (orientation:landscape){
+  body {
+    background-image:url(https://disenowebakus.net/imagenes/articulos/html5.jpg);
+  }
+}
+@media (orientation:portrait){
+  body {
+    background-image:url(https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg);
+  }
+} */
