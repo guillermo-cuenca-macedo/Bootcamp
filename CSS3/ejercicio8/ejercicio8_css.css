@@ -1,0 +1,33 @@
+
+  table {
+    border-collapse: separate;
+    width: 100%;
+    border: 5px solid #000000;
+  }
+
+  th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    font-weight: bold;
+    background-color: #87CEEB;
+  }
+
+  .color-vehicle {
+      background-color: #fff387;
+      font-weight: bold;
+  }
+
+  .category-row span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .total {
+    font-weight: bold;
+    background-color: #BEF574;
+    text-align: right;
+  }
