@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo 9</title>
+    <script type="module">
+        import "../src/theme-element.js";
+    </script>
+</head>
+<style>
+    html {
+        background-color: lightblue;
+        --theme-primary: green;
+        --theme-secondary: aliceblue;
+        --theme-warning: red;
+        --theme-font-family: Roboto;
+    }
+
+    header {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    theme-element {
+        --my-element-text-color: var(--theme-primary);
+        --my-element-background-color: var(--theme-secondary);
+        --my-element-font-family: var(--my-element-font-family);
+    }
+
+    .warning {
+        --my-element-text-color: var(--theme-warning);
+    }
+
+</style>
+<body>
+    <header>
+        <a href="index.html">Este es el archivo index</a>
+    </header>
+    <section>
+        <h2>Uso y configuracion de theme para un componente</h2>
+        <theme-element></theme-element>
+        <theme-element hidden></theme-element>
+        <theme-element class="warning"></theme-element>
+    </section>
+</body>
+</html>
