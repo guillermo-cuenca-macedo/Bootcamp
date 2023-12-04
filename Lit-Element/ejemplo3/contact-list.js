@@ -1,5 +1,5 @@
 import { LitElement,css, html } from 'lit';
-import '../src/simple-component.js';
+import '../src/e-contact.js';
 
 export class ContactList extends LitElement {
   static styles = css`
@@ -39,9 +39,9 @@ export class ContactList extends LitElement {
       <div>
         ${this.contactos.map(i=>
           html`
-            <simple-component
+            <e-contact
               nombre="${i.nombre}"
-              email="${i.correo}"></simple-component>
+              email="${i.correo}"></e-contact>
           `
         )}
       </div>
