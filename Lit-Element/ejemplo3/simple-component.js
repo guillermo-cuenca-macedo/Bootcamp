@@ -1,5 +1,5 @@
 import { LitElement,css, html } from 'lit';
-export class SimpleComponent extends LitElement {
+export class EContact extends LitElement {
   static styles = css`
     h1,p, button {
       text-align: center;
@@ -49,4 +49,4 @@ export class SimpleComponent extends LitElement {
   }
 
 }
-customElements.define('simple-component', SimpleComponent);
+customElements.define('e-contact', EContact);
