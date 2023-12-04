@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ejemplo 2</title>
-    <script type="module" src="./src/simple-component.js"></script>
+    <title>Ejercicio4</title>
+    <script type="module" src="./src/e-contact.js"></script>
+    <style>
+        body {
+            background: #fafafa;
+        }
+    </style>
 </head>
+
 <body>
-    <simple-component
-     nombre="Guillermo Cuenca"
-     email="ejemplo@ejemplo.com"></simple-component>    
-    <simple-component
-     nombre="Jhon Doe"
-     email="ejemplo@ejemplo.com"></simple-component>  
+    <ul>
+        <li><e-contact
+                email="ejemplo@ejemplo"
+                nombre="Guillermo Cuenca"></e-contact></li>
+        <li><e-contact
+            email="example@example"
+            nombre="Jhon Doe"></e-contact></li>
+    </ul>
 </body>
 </html>
