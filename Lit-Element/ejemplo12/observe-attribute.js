@@ -8,7 +8,9 @@ class ObserveAttribute extends LitElement {
   };
 
   static styles = css`
-    /* Agrega estilos si es necesario */
+    span {
+      background-color: cornflowerblue;
+    }
   `;
 
   constructor() {
@@ -25,9 +27,9 @@ class ObserveAttribute extends LitElement {
 
   render() {
     return html `
-      <p>myProp ${this.myProp}</p>
-      <p>theProp ${this.theProp}</p>
-      <p>otherProp ${this.otherProp}</p>
+      <p>myProp <span>${this.myProp}</span></p>
+      <p>theProp <span>${this.theProp}</span></p>
+      <p>otherProp <span>${this.otherProp}</span></p>
 
       <button @click="${this.changeAttributes}">Change attributes</button>
     `;
