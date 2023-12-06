@@ -52,6 +52,3 @@ export class EContact extends LitElement {
 
 }
 customElements.define('e-contact', EContact);
-
-}
-customElements.define('simple-component', SimpleComponent);
