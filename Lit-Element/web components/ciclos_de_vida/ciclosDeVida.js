@@ -32,3 +32,10 @@ class MiMensaje extends HTMLElement {
 }
 
 customElements.define('mi-mensaje', MiMensaje);
+let miMensaje = document.createElement('mi-mensaje');
+miMensaje.msj = 'un nuevo mensaje desde creacion';
+document.body.appendChild(miMensaje);
+
+let tercerMensaje = new MiMensaje();
+tercerMensaje.msj = 'Este es el tercer mensaje';
+document.body.appendChild(tercerMensaje);
