@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 3 Templates: Version 1</title>
+    <style>
+        body{
+            background-color: rgb(134, 167, 228);
+        }
+    </style>
+</head>
+<body>
+    <div id="host"></div>
+        <script>
+          const host = document.querySelector('#host');
+          
+          const df = document.createDocumentFragment();
+
+          const div = document.createElement('div');
+          const h1 = document.createElement('h1');
+          const p = document.createElement('p');
+
+          h1.textContent = 'hola',
+          p.textContent = 'Saludos de Guillermo';
+
+          div.appendChild(h1);
+          div.appendChild(p);
+
+          df.appendChild(div);
+          host.appendChild(df);
+        </script>
+    
+</body>
+</html>
