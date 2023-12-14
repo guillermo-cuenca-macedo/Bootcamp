@@ -21,3 +21,12 @@ class MiBotonExtendido extends HTMLButtonElement {
 }
 
 customElements.define('mi-boton-extendido', MiBotonExtendido, {extends: 'button'});
+
+const miBotonExtendido2 = document.createElement('button', {is: MiBotonExtendido.ceName});
+
+miBotonExtendido2.textContent = "Soy el segundo boton extendido";
+document.body.appendChild(miBotonExtendido2);
+const miBotonExtendido3 = document.createElement('button', {is:MiBotonExtendido.ceName});
+miBotonExtendido3.textContent="Soy el boton extendido #3";
+document.querySelector('#container').appendChild(miBotonExtendido2);
+document.querySelector('#container').appendChild(miBotonExtendido3);
