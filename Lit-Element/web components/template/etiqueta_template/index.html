@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 4 Templates: Usando etiqueta template</title>
+    <style>
+        body{
+            background-color: rgb(134, 167, 228);
+        }
+    </style>
+</head>
+<body>
+    <template>
+        <h1>Hola, etiqueta template de Guillermo</h1>
+        <p>Este es un párrafo</p>
+    </template>
+    <div id="host"></div>
+
+    <script>
+        const host = document.querySelector('#host');
+        const tpl = document.querySelector('template');
+        const tplInst = tpl.content.cloneNode(true);
+
+        host.appendChild(tplInst);
+    </script>
+    
+</body>
+</html>
