@@ -8,7 +8,7 @@ class MiMensaje extends HTMLElement {
     }
 
     static get observedAttributes(){
-        return ['msj'];
+        return ['msj', 'casi-visible'];
     }
 
     get msj(){
@@ -17,6 +17,19 @@ class MiMensaje extends HTMLElement {
 
     set msj(val){
         this.setAttribute('msj', val);
+    }
+
+    get casiVisible(){
+        return this.hasAttribute('casi-visible');
+    }
+
+    set casiVisible(val){
+        if(val){
+            this.setAttribute('casi-visible', '');
+        }
+        else {
+            this.removeAttribute('casi-visible');
+        }
     }
 
     connectedCallback() {
@@ -32,10 +45,22 @@ class MiMensaje extends HTMLElement {
         if(name === 'msj'){
             this.pintarMensaje(newValue);
         }
+
+        if(name === 'casi-visible'){
+            this.setCasiVisible();
+        }
     }
 
     pintarMensaje(msj){
         this.innerHTML = msj;
+    }
+
+    setCasiVisible(){
+        if(this.casiVisible){
+            this.style.opacity = 0.1;
+        } else {
+            this.style.opacity = 1;
+        }
     }
 }
 
