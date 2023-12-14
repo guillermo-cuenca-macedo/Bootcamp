@@ -11,6 +11,14 @@ class MiMensaje extends HTMLElement {
         return ['msj'];
     }
 
+    get msj(){
+        return this.getAttribute('msj');
+    }
+
+    set msj(val){
+        this.setAttribute('msj', val);
+    }
+
     connectedCallback() {
         console.log('connectedCallback: cuando el elemento es insertado en el documento');
     }
