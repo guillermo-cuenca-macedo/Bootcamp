@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 6 Shadow Dom Encapsulacion </title>
+    <script type="module" src="./src/miSaludo.js"></script>
+    <style>
+        body{
+            background-color: rgb(134, 167, 228);
+        }
+        h1#mi-id{
+            margin-left: 20rem;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mi-id">Externo</h1>
+    <template>
+        <style>
+            :host{
+                display: block;
+                border: 5px solid green;
+                margin-bottom: 2rem;
+            }
+            h1#mi-id{
+                margin-left: 1rem;
+                margin-right: 1rem;
+                border: 5px solid green;
+            }
+        </style>
+        <h1 id="mi-id">Mensaje de template de Guillermo</h1>
+        <p>Este es el párrafo de template</p>
+    </template>
+
+    <mi-saludo></mi-saludo>
+    <mi-saludo></mi-saludo>
+    <mi-saludo></mi-saludo>
+    <mi-saludo></mi-saludo>
+    
+</body>
+</html>
